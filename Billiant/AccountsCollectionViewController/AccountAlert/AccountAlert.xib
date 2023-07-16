@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AccountAlert" customModule="Billiant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="282"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pfJ-ab-bBR">
+                    <rect key="frame" x="0.0" y="22.000000000000014" width="300" height="238.33333333333337"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WlM-Vg-4bV">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Создание счета" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N15-dM-FcO">
+                                    <rect key="frame" x="20" y="18.333333333333336" width="260" height="23"/>
+                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                    <color key="textColor" name="333333#FFE600"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" name="FFE600#1E1E1E"/>
+                            <constraints>
+                                <constraint firstItem="N15-dM-FcO" firstAttribute="centerX" secondItem="WlM-Vg-4bV" secondAttribute="centerX" id="QhM-ZI-gR7"/>
+                                <constraint firstAttribute="height" constant="60" id="hYj-uf-wSB"/>
+                                <constraint firstItem="N15-dM-FcO" firstAttribute="leading" secondItem="WlM-Vg-4bV" secondAttribute="leading" constant="20" id="jh5-Tm-VLy"/>
+                                <constraint firstAttribute="trailing" secondItem="N15-dM-FcO" secondAttribute="trailing" constant="20" id="laO-dg-iei"/>
+                                <constraint firstItem="N15-dM-FcO" firstAttribute="centerY" secondItem="WlM-Vg-4bV" secondAttribute="centerY" id="zJ9-RW-aT6"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="M95-5S-ghv">
+                            <rect key="frame" x="20" y="80" width="260" height="84"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tJz-o7-kWh" customClass="MDCFilledTextField">
+                                    <rect key="frame" x="0.0" y="0.0" width="260" height="34"/>
+                                    <color key="textColor" name="333333#FFE600"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FvK-p4-HVE" customClass="MDCFilledTextField">
+                                    <rect key="frame" x="0.0" y="50" width="260" height="34"/>
+                                    <color key="textColor" name="333333#FFE600"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RID-Hi-VY6">
+                            <rect key="frame" x="20" y="184" width="85.666666666666671" height="34.333333333333343"/>
+                            <color key="backgroundColor" name="4F4F4F#333333"/>
+                            <color key="tintColor" name="FFFFFF#FFFFFF"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Отмена"/>
+                            <connections>
+                                <action selector="cancelAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="d5F-QN-WYW"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8JU-f0-GWI">
+                            <rect key="frame" x="170.66666666666666" y="184" width="109.33333333333334" height="34.333333333333343"/>
+                            <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" name="FFFFFF#FFFFFF"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Сохранить"/>
+                            <connections>
+                                <action selector="acceptAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="sTC-dS-88x"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="FFFFFF#4F4F4F"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="8JU-f0-GWI" secondAttribute="bottom" constant="20" id="5M0-io-dnn"/>
+                        <constraint firstItem="RID-Hi-VY6" firstAttribute="top" secondItem="M95-5S-ghv" secondAttribute="bottom" constant="20" id="9jO-xL-aBW"/>
+                        <constraint firstAttribute="trailing" secondItem="WlM-Vg-4bV" secondAttribute="trailing" id="COq-4X-G5s"/>
+                        <constraint firstItem="M95-5S-ghv" firstAttribute="top" secondItem="WlM-Vg-4bV" secondAttribute="bottom" constant="20" id="GVz-yp-Gno"/>
+                        <constraint firstItem="WlM-Vg-4bV" firstAttribute="top" secondItem="pfJ-ab-bBR" secondAttribute="top" id="Ije-1R-4JT"/>
+                        <constraint firstItem="WlM-Vg-4bV" firstAttribute="leading" secondItem="pfJ-ab-bBR" secondAttribute="leading" id="Iv9-Eu-c8Z"/>
+                        <constraint firstAttribute="bottom" secondItem="RID-Hi-VY6" secondAttribute="bottom" constant="20" id="SwI-LW-Oaj"/>
+                        <constraint firstItem="RID-Hi-VY6" firstAttribute="leading" secondItem="pfJ-ab-bBR" secondAttribute="leading" constant="20" id="cPr-qM-XQ1"/>
+                        <constraint firstAttribute="trailing" secondItem="M95-5S-ghv" secondAttribute="trailing" constant="20" id="ce2-la-mF2"/>
+                        <constraint firstItem="8JU-f0-GWI" firstAttribute="top" secondItem="M95-5S-ghv" secondAttribute="bottom" constant="20" id="ePP-br-9T0"/>
+                        <constraint firstAttribute="trailing" secondItem="8JU-f0-GWI" secondAttribute="trailing" constant="20" id="mR6-Bs-R0q"/>
+                        <constraint firstAttribute="width" constant="300" id="oMB-Qg-usA"/>
+                        <constraint firstItem="M95-5S-ghv" firstAttribute="leading" secondItem="pfJ-ab-bBR" secondAttribute="leading" constant="20" id="rTb-mq-gnb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="FFFFFF#1E1E1E"/>
+            <constraints>
+                <constraint firstItem="pfJ-ab-bBR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="A5T-ea-bOI"/>
+                <constraint firstItem="pfJ-ab-bBR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="aEg-st-Ipp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="acceptButton" destination="8JU-f0-GWI" id="zwF-o0-nHh"/>
+                <outlet property="amountTextField" destination="FvK-p4-HVE" id="k9V-QR-G80"/>
+                <outlet property="cancelButton" destination="RID-Hi-VY6" id="KCm-8B-qrp"/>
+                <outlet property="nameTextField" destination="tJz-o7-kWh" id="Y40-59-AB3"/>
+                <outlet property="titleLabel" destination="N15-dM-FcO" id="5QS-v9-iYu"/>
+            </connections>
+            <point key="canvasLocation" x="483.96946564885496" y="-275.35211267605638"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="333333#FFE600">
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="4F4F4F#333333">
+            <color red="0.31000000238418579" green="0.31000000238418579" blue="0.31000000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FFE600#1E1E1E">
+            <color red="1" green="0.90200001001358032" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FFFFFF#1E1E1E">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FFFFFF#4F4F4F">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FFFFFF#FFFFFF">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
