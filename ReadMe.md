@@ -30,7 +30,8 @@
 |<img src="./Demo_Image/Accounts_light.png" height="420">|<img src="./Demo_Image/Accounts_dark.png" height="420">|<img src="./Demo_Image/Create_account.png" height="420">|
 ##
 
-##### Server-side participant <a href="https://github.com/Barsick132">
+##### Server-side participant 
+<a href="https://github.com/Barsick132">
 <img src="https://img.shields.io/badge/Barsick132-98f4f4" alt="participant" />
 </a>
 
