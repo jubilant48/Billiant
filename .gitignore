@@ -7,6 +7,10 @@
 # CocoaPods - Only use to conserve bandwidth / Save time on Pushing
 #           - Also handy if you have a large number of dependant pods
 #           - AS PER https://guides.cocoapods.org/using/using-cocoapods.html NEVER IGNORE THE LOCK FILE
+Billiant/
+TEST-Keys.plist
+PROD-Keys.plist
+
 Pods/
 
 ### Objective-C ###
@@ -78,10 +82,6 @@ iOSInjectionProject/
 ### Swift ###
 # Xcode
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
-
-
-Billiant/TEST-Keys.plist
-Billiant/PROD-Keys.plist
 
 
 ## Playgrounds
