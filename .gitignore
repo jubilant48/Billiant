@@ -80,8 +80,8 @@ iOSInjectionProject/
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
 
-TEST-Keys.plist
-PROD-Keys.plist
+Billiant/TEST-Keys.plist
+Billiant/PROD-Keys.plist
 
 
 ## Playgrounds
